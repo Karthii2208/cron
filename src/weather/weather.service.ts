@@ -8,7 +8,7 @@ export class WeatherService {
 
 
   // Cron job that runs every minute
-  @Cron('*/1 * * * * *')
+  @Cron('*/1 * * * * *') 
   async fetchWeatherData() {
     this.logger.debug('Fetching weather data...');
 
